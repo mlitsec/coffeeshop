@@ -1,45 +1,163 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beranda | Coffee Yahud</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Kopi Kita</title>
+    <style>
+        /* --- Gaya Umum --- */
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f3ef;
+            color: #333;
+        }
+
+        header {
+            background-color: #3e2723;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #5d4037;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            background-color: #ffcc80;
+            color: #3e2723;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffb74d;
+        }
+
+        section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 250px;
+        }
+
+        .feature-card h3 {
+            color: #3e2723;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Coffee Yahud</h1>
+    <header>
+        <h1>Kopi Kita</h1>
+        <p>Teman Hangat di Setiap Cerita</p>
+    </header>
+
     <nav>
-      <a href="index.html">Beranda</a>
-      <a href="katalog.html">Katalog</a>
-      <a href="member.html">Pendaftaran Member</a>
-      <a href="contact.html">Contact Us</a>
+        <a href="index.html">Beranda</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="member.html">Pendaftaran Member</a>
+        <a href="kontak.html">Kontak</a>
     </nav>
-  </header>
 
-  <main>
     <section class="hero">
-      <h2>Selamat Datang di Coffee Yahud</h2>
-      <p>Temukan kenikmatan kopi terbaik yang diracik dengan cinta dan kehangatan.</p>
-      <img src="images/coffee.jpg" alt="Coffee Yahud" width="300">
+        <h1>Selamat Datang di Kopi Kita</h1>
+        <p>Rasakan kenikmatan kopi terbaik dari biji pilihan nusantara.</p>
+        <a href="katalog.html" class="btn">Pesan Sekarang</a>
     </section>
 
-    <section class="about">
-      <h3>Tentang Kami</h3>
-      <p>Coffee Bliss hadir untuk menemani harimu dengan aroma kopi yang menenangkan. Kami menggunakan biji kopi pilihan dari petani lokal Indonesia.</p>
+    <section>
+        <h2>Mengapa Memilih Kami?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Kopi Premium</h3>
+                <p>Biji kopi pilihan dari petani terbaik Indonesia.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Suasana Nyaman</h3>
+                <p>Tempat ideal untuk bekerja, bersantai, atau ngobrol.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Pelayanan Cepat</h3>
+                <p>Pesan online atau offline, kopi kamu tetap cepat sampai!</p>
+            </div>
+        </div>
     </section>
 
-    <section class="promo">
-      <h3>Promo Minggu Ini</h3>
-      <ul>
-        <li>☕ Latte – Diskon 20%</li>
-        <li>🥐 Paket Kopi + Croissant – Hanya Rp25.000</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Coffee Yahud. All Rights Reserved.</p>
-  </footer>
+    <footer>
+        <p>© 2025 Kopi Kita | Dibuat dengan ❤️ oleh Tim Kolaborasi</p>
+        <p><a href="https://github.com/liaro25">Lihat Proyek di GitHub</a></p>
+    </footer>
 </body>
 </html>
