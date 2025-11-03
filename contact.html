@@ -4,141 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Coffee Yahud — Contact Us</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <style>
-    :root {
-      --coffee: #5b3b28;
-      --cream: #f7f3ef;
-      --accent: #8b5e34;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background: var(--cream);
-      color: #2d2a26;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background-color: var(--coffee);
-      color: white;
-      text-align: center;
-      padding: 30px 20px 40px;
-    }
-
-    header h1 {
-      font-size: 32px;
-      margin: 0;
-    }
-
-    header p {
-      margin: 5px 0 0;
-      font-size: 16px;
-      color: #f1eae4;
-    }
-
-    nav {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 15px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    /* ===== MAIN CONTENT ===== */
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 16px 64px;
-    }
-
-    h1,
-    h2 {
-      line-height: 1.2;
-    }
-
-    .grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* ===== FORM ===== */
-    form {
-      display: grid;
-      gap: 12px;
-    }
-
-    label {
-      font-weight: 600;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: inherit;
-    }
-
-    button {
-      background: var(--accent);
-      color: white;
-      border: none;
-      padding: 10px 14px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background-color: var(--coffee);
-      color: white;
-      text-align: center;
-      padding: 25px 10px;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    footer a:hover {
-      color: #ffd7b5;
-    }
-  </style>
 </head>
-
 <body>
   <!-- HEADER -->
   <header>
@@ -148,53 +14,62 @@
 
   <!-- NAVIGATION -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="katalog.html">Order & Catalog</a>
-    <a href="member.html">Member</a>
-    <a href="contact.html">Contact</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="katalog.html">Order & Catalog</a></li>
+      <li><a href="member.html">Member</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
   </nav>
 
   <!-- MAIN CONTENT -->
   <main>
-    <h1>Contact Us</h1>
+    <h2>Contact Us</h2>
 
-    <div class="grid">
-      <div class="card">
-        <h2>Store Info</h2>
+    <section aria-labelledby="store-info">
+      <h3 id="store-info">Store Info</h3>
+      <address>
         <p>
-          <strong>Address:</strong><br />
-          Jl. Kemang Raya No.39, RT.9/RW.1, Bangka,<br />
-          Kec. Mampang Prpt., Kota Jakarta Selatan,<br />
+          <strong>Address:</strong><br>
+          Jl. Kemang Raya No.39, RT.9/RW.1, Bangka,<br>
+          Kec. Mampang Prpt., Kota Jakarta Selatan,<br>
           Daerah Khusus Ibukota Jakarta 12730, Indonesia
         </p>
+        <p><strong>Hours:</strong> Mon–Sun 08:00–18:00</p>
+        <p><strong>Phone:</strong> 021-8231-7664</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@coffeeyahud.com">hello@coffeeyahud.com</a></p>
+      </address>
+    </section>
 
-                <p><strong>Hours:</strong> Mon–Sun 08:00–18:00</p>
-                <p><strong>Phone:</strong> 021-8231-7664</p>
-                <p><strong>Email:</strong> hello@coffeeyahud.com</p>
-            </div>
+    <section aria-labelledby="contact-form">
+      <h3 id="contact-form">Send a Message</h3>
+      <form action="#" method="post">
+        <p>
+          <label for="cname">Name</label><br>
+          <input id="cname" name="name" type="text" required>
+        </p>
 
-      <div class="card">
-        <h2>Send a Message</h2>
-        <form onsubmit="event.preventDefault(); alert('Message sent! (demo)');">
-          <label for="cname">Name</label>
-          <input id="cname" type="text" placeholder="Your name" required />
+        <p>
+          <label for="cemail">Email</label><br>
+          <input id="cemail" name="email" type="email" required>
+        </p>
 
-          <label for="cemail">Email</label>
-          <input id="cemail" type="email" placeholder="you@example.com" required />
+        <p>
+          <label for="cmsg">Message</label><br>
+          <textarea id="cmsg" name="message" rows="5" required></textarea>
+        </p>
 
-          <label for="cmsg">Message</label>
-          <textarea id="cmsg" rows="4" placeholder="Write your message..." required></textarea>
-
+        <p>
           <button type="submit">Send</button>
-        </form>
-      </div>
-    </div>
+        </p>
+      </form>
+    </section>
   </main>
 
   <!-- FOOTER -->
   <footer>
-    © 2025 Coffee Yahud | Dibuat dengan ❤️ oleh Tim Yahud<br />
-    <a href="https://github.com/mlitsec/coffeeshop" target="_blank">Lihat Proyek di GitHub</a>
+    <p>© 2025 Coffee Yahud | Dibuat dengan ❤️ oleh Tim Yahud</p>
+    <p><a href="https://github.com/mlitsec/coffeeshop" target="_blank" rel="noopener">Lihat Proyek di GitHub</a></p>
   </footer>
 </body>
 </html>
