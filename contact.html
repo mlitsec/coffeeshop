@@ -1,185 +1,200 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coffee Yahud — Contact Us</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Yahud — Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- CSS digabung di sini -->
-    <style>
-        :root {
-            --bg: #f9f5f0;
-            --ink: #2d2a26;
-            --accent: #8b5e34;
-            --soft: #eee;
-        }
+  <style>
+    :root {
+      --coffee: #5b3b28;
+      --cream: #f7f3ef;
+      --accent: #8b5e34;
+    }
 
-        * {
-            box-sizing: border-box;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        body {
-            margin: 0;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-            background: var(--bg);
-            color: var(--ink);
-        }
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--cream);
+      color: #2d2a26;
+    }
 
-        /* header & nav */
-        header {
-            background: #fff;
-            border-bottom: 1px solid var(--soft);
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
+    /* ===== HEADER ===== */
+    header {
+      background-color: var(--coffee);
+      color: white;
+      text-align: center;
+      padding: 30px 20px 40px;
+    }
 
-        nav {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            padding: 12px 16px;
-        }
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+    }
 
-        nav a {
-            text-decoration: none;
-            color: var(--ink);
-            padding: 6px 10px;
-            border-radius: 999px;
-        }
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+      color: #f1eae4;
+    }
 
-        nav a.brand {
-            font-weight: 800;
-            color: var(--accent);
-            margin-right: auto;
-        }
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
 
-        nav a:hover {
-            background: #f1ece5;
-        }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
 
-        /* layout */
-        main {
-            max-width: 900px;
-            margin: 24px auto;
-            padding: 0 16px 64px;
-        }
+    nav a:hover {
+      color: var(--accent);
+    }
 
-        h1,
-        h2 {
-            line-height: 1.2;
-        }
+    /* ===== MAIN CONTENT ===== */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px 64px;
+    }
 
-        .grid {
-            display: grid;
-            gap: 16px;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        }
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
 
-        .card {
-            background: #fff;
-            border: 1px solid var(--soft);
-            border-radius: 12px;
-            padding: 16px;
-        }
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 
-        /* form */
-        form {
-            display: grid;
-            gap: 12px;
-        }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        label {
-            font-weight: 600;
-        }
+    /* ===== FORM ===== */
+    form {
+      display: grid;
+      gap: 12px;
+    }
 
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: #fff;
-        }
+    label {
+      font-weight: 600;
+    }
 
-        button {
-            background: var(--accent);
-            color: #fff;
-            border: none;
-            padding: 10px 14px;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+    }
 
-        button:hover {
-            opacity: .95;
-        }
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
 
-        footer {
-            text-align: center;
-            font-size: 14px;
-            color: #6b655f;
-            padding: 24px 16px;
-        }
-    </style>
+    button:hover {
+      opacity: 0.9;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: var(--coffee);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #ffd7b5;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a class="brand" href="index.html">☕ Coffee Yahud</a>
-            <a href="index.html">Home</a>
-            <a href="katalog.html">Order & Catalog</a>
-            <a href="member.html">Member</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <h1>☕ Coffee Yahud</h1>
+    <p>Selalu Ada Teman Hangat di Setiap Cerita</p>
+  </header>
 
-    <main>
-        <h1>Contact Us</h1>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="order.html">Order & Catalog</a>
+    <a href="member.html">Member</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-        <div class="grid">
-            <!-- Info Toko -->
-            <div class="card">
-                <h2>Store Info</h2>
-                <p>
-                    <strong>Address:</strong><br>
-                    Jl. Kemang Raya No.39, RT.9/RW.1, Bangka,<br>
-                    Kec. Mampang Prpt., Kota Jakarta Selatan,<br>
-                    Daerah Khusus Ibukota Jakarta 12730, Indonesia
-                </p>
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>Contact Us</h1>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Store Info</h2>
+        <p>
+          <strong>Address:</strong><br />
+          Jl. Kemang Raya No.39, RT.9/RW.1, Bangka,<br />
+          Kec. Mampang Prpt., Kota Jakarta Selatan,<br />
+          Daerah Khusus Ibukota Jakarta 12730, Indonesia
+        </p>
 
                 <p><strong>Hours:</strong> Mon–Sun 08:00–18:00</p>
                 <p><strong>Phone:</strong> 021-8231-7664</p>
-                <p><strong>Email:</strong> hello@coffeeyahud.com</p>
+                <p><strong>Email:</strong> hello@coffeeshop.com</p>
             </div>
 
-            <!-- Form Pesan -->
-            <div class="card">
-                <h2>Send a Message</h2>
-                <form onsubmit="event.preventDefault(); alert('Message sent! (demo)');">
-                    <div>
-                        <label for="cname">Name</label>
-                        <input id="cname" type="text" placeholder="Your name" required>
-                    </div>
-                    <div>
-                        <label for="cemail">Email</label>
-                        <input id="cemail" type="email" placeholder="you@example.com" required>
-                    </div>
-                    <div>
-                        <label for="cmsg">Message</label>
-                        <textarea id="cmsg" rows="4" placeholder="Write your message..." required></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </main>
+      <div class="card">
+        <h2>Send a Message</h2>
+        <form onsubmit="event.preventDefault(); alert('Message sent! (demo)');">
+          <label for="cname">Name</label>
+          <input id="cname" type="text" placeholder="Your name" required />
 
-    <footer>© 2025 Coffee Yahud</footer>
+          <label for="cemail">Email</label>
+          <input id="cemail" type="email" placeholder="you@example.com" required />
+
+          <label for="cmsg">Message</label>
+          <textarea id="cmsg" rows="4" placeholder="Write your message..." required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Coffee Yahud | Dibuat dengan ❤️ oleh Tim Yahud<br />
+    <a href="https://github.com/mlitsec/coffeeshop" target="_blank">Lihat Proyek di GitHub</a>
+  </footer>
 </body>
-
 </html>
