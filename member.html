@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Yahud — Member Registration</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>☕ Coffee Yahud</h1>
+    <p>Selalu Ada Teman Hangat di Setiap Cerita</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="katalog.html">Order & Catalog</a></li>
+      <li><a href="#">Member</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h2>Member Registration</h2>
+
+    <section aria-labelledby="registration-section">
+      <h3 id="registration-info">Gabung bersama Yahud</h3>
+        <p>
+          Tertarik ingin menjadi kawan Coffee Yahud? <br>Temukan keuntungan menjadi anggota dan daftar sekarang juga!
+        </p>
+        <p>Keuntungan menjadi member:</p>
+        <ol>
+            <li>Diskon khusus untuk member</li>
+            <li>Dapatkan minuman kopi gratis setelah sembilan kali transaksi</li>
+             <li>Hadiah berbasis poin</li>
+        </ol>
+    </section>
+
+    <section aria-labelledby="registration-form">
+        <fieldset>
+            <legend><strong>Isi Data Registrasi</strong></legend>
+            <form method="post">
+                <label>
+                    Nama:
+                    <br>
+                    <input name="nama" autocomplete="name">
+                </label>
+            </form>
+            <br>
+            <form method="post">
+                <label>
+                    Email
+                    <br>
+                    <input name="email" autocomplete="email">
+                </label>
+            </form>
+            <br>
+            <form method="post">
+                <label>
+                    No. Telp
+                    <br>
+                    <input name="telp" autocomplete="telp">
+                </label>
+            </form>
+            <p>Pilih tipe membership</p>
+            <label><input type="radio" name="radio" value="silver"> Silver</label>
+            <label><input type="radio" name="radio" value="gold"> Gold</label>
+            <label><input type="radio" name="radio" value="platinum"> Platinum</label>
+
+            <p>Apakah Anda setuju untuk mendapatkan berita terkait diskon spesial atau produk terbaru?</p>
+            <label><input type="radio" name="radio" value="yes"> Ya</label>
+            <label><input type="radio" name="radio" value="no"> Tidak</label>
+            <p>
+                <button type="submit">Register</button>
+            </p>
+        </fieldset>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Coffee Yahud | Dibuat dengan ❤️ oleh Tim Yahud</p>
+    <p><a href="https://github.com/mlitsec/coffeeshop" target="_blank" rel="noopener">Lihat Proyek di GitHub</a></p>
+  </footer>
+</body>
+</html>
