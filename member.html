@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coffee Yahud — Member Registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☕Coffee Yahud</title>
 </head>
-<body>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6; color: hsl(19, 29%, 28%);">
   <!-- HEADER -->
-  <header>
-    <h1>☕ Coffee Yahud</h1>
-    <p>Selalu Ada Teman Hangat di Setiap Cerita</p>
+  <header style="background: hsl(19, 29%, 28%); color: white; text-align: center; padding: 40px 20px;">
+    <h1>☕Coffee Yahud</h1>
+    <p>Selau Ada Teman Hangat di Setiap Cerita</p>
+    <nav aria-label="Main Navigation" style="margin-top: 15px;">
+      <a aria-current="page" href="index.html" style="text-decoration: none; color: rgb(255, 255, 255);">Home</a>
+      <span style="margin: 0 12px;">|</span>
+      <a href="katalog.html" style="text-decoration: none; color: white;">Order & Katalog</a>
+      <span style="margin: 0 12px;">|</span>
+      <a href="#" style="text-decoration: none; color: white;">Member</a>
+      <span style="margin: 0 12px;">|</span>
+      <a href="contact.html" style="text-decoration: none; color: white;">Contact</a>
+      <span style="margin: 0 12px;">|</span>
+    </nav>
   </header>
-
-  <!-- NAVIGATION -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="katalog.html">Order & Catalog</a></li>
-      <li><a href="#">Member</a></li>
-      <li><a href="contact.html" aria-current="page">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- MAIN CONTENT -->
+    <!-- REGISTRASI SECTION -->
   <main>
-    <h2>Member Registration</h2>
-
-    <section aria-labelledby="registration-section">
-      <h3 id="registration-info">Gabung bersama Yahud</h3>
-        <p>
-          Tertarik ingin menjadi kawan Coffee Yahud? <br>Temukan keuntungan menjadi anggota dan daftar sekarang juga!
-        </p>
-        <p>Keuntungan menjadi member:</p>
-        <ol>
-            <li>Diskon khusus untuk member</li>
-            <li>Dapatkan minuman kopi gratis setelah sembilan kali transaksi</li>
-             <li>Hadiah berbasis poin</li>
-        </ol>
-    </section>
-
-    <section aria-labelledby="registration-form">
+    <section id="registration-section" style="margin-top: 50px; text-align: center;">
+      <h2 style="margin-top: 20px; color: black;">Mari Bergabung bersama Coffee Yahud</h2>
+      <p style="max-width: 700px; margin: 10px auto;">
+        Tertarik ingin menjadi kawan Coffee Yahud? <br>Temukan keuntungan menjadi anggota dan daftar sekarang juga!
+      </p>
+      <p style="max-width: 700px; margin: 10px auto;">
+        Keuntungan menjadi member:
+      </p>
+      <ol style="text-align: left; max-width: 500px; margin: 10px auto;">
+          <li>Diskon khusus untuk member</li>
+          <li>Dapatkan minuman kopi gratis setelah sembilan kali transaksi</li>
+          <li>Hadiah berbasis poin</li>
+      </ol>
+      <!-- FORM REGISTRASI -->
+      <section aria-labelledby="registration-form" style="margin: 1em;">
         <fieldset>
             <legend><strong>Isi Data Registrasi</strong></legend>
             <form method="post">
@@ -73,17 +71,21 @@
             <p>Apakah Anda setuju untuk mendapatkan berita terkait diskon spesial atau produk terbaru?</p>
             <label><input type="radio" name="radio" value="yes"> Ya</label>
             <label><input type="radio" name="radio" value="no"> Tidak</label>
-            <p>
-                <button type="submit">Register</button>
-            </p>
         </fieldset>
+      </section>
+      <!-- TOMBOL REGISTRASI -->
+      <p>
+        <a href="#" style="display: inline-block; padding: 10px 20px; border: 1px solid brown; text-decoration: none; color: brown; border-radius: 5px;">
+          Registrasi
+        </a>
+      </p>
     </section>
   </main>
-
   <!-- FOOTER -->
-  <footer>
+  <footer style="background-color: #5b3b2e; color: white; text-align: center; padding: 15px;">
     <p>© 2025 Coffee Yahud | Dibuat dengan ❤️ oleh Tim Yahud</p>
-    <p><a href="https://github.com/mlitsec/coffeeshop" target="_blank" rel="noopener">Lihat Proyek di GitHub</a></p>
+    <p><a href="https://github.com/liaro25">Lihat Proyek di GitHub</a></p>
   </footer>
+
 </body>
-</html>
+</html> 
